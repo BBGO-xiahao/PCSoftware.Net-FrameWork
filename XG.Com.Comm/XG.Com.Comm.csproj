@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5130BA95-F0FD-4E9F-8705-62ADEA3DF246}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XG.Com.Comm</RootNamespace>
+    <AssemblyName>XG.Com.Comm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Product\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialPort\CheckSumHandler.cs" />
+    <Compile Include="SerialPort\Communicator.cs" />
+    <Compile Include="SerialPort\DataReceivedHandler.cs" />
+    <Compile Include="SerialPort\HexProtocolAnalyzer.cs" />
+    <Compile Include="SerialPort\IAnalyzer.cs" />
+    <Compile Include="SerialPort\IAnalyzerCollection.cs" />
+    <Compile Include="SerialPort\ICommunication.cs" />
+    <Compile Include="SerialPort\ICommunicationSetting.cs" />
+    <Compile Include="SerialPort\ProtocolAnalyzer.cs" />
+    <Compile Include="SerialPort\SearchResult.cs" />
+    <Compile Include="SerialPort\SerialPort.cs" />
+    <Compile Include="SerialPort\SerialPortFindTool.cs" />
+    <Compile Include="SerialPort\SerialPortManage.cs" />
+    <Compile Include="SerialPort\SerialPortSetting.cs" />
+    <Compile Include="SerialPort\TextProtocolAnalyzer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XG.Com.Core\XG.Com.Core.csproj">
+      <Project>{6e9ec6d4-2c4f-4cdd-a813-3dd349668006}</Project>
+      <Name>XG.Com.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XG.Com.LogHelper\XG.Com.LogHelper.csproj">
+      <Project>{de20a47a-e8ca-4105-939d-10c6b3f4cf24}</Project>
+      <Name>XG.Com.LogHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
