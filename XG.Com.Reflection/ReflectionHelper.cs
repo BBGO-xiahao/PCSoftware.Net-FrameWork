@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace XG.Com.Reflection
 {
@@ -29,8 +30,25 @@ namespace XG.Com.Reflection
             }
             return instance;
         }
+        public ContainerControl ReflectionUI(string dllPath, string objectName, Type type)
+        {
+            Assembly assembly = Assembly.LoadFrom(dllPath);
+
+            // 获取UserControl的类型
+            Type[] userControlType = assembly.GetTypes();
+            foreach (Type t in userControlType)
+            {
+                if (t.IsSubclassOf(type) && t.Name == objectName)
+                {
+                    // 创建UserControl实例
+                    return (ContainerControl)Activator.CreateInstance(t);
+                }
+            }
+            // 将UserControl添加到窗体中
+            return null;
+        }
         #endregion
 
-       
+
     }
 }

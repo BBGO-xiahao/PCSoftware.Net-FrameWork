@@ -98,6 +98,7 @@
             this.btnBroadcast.TabIndex = 2;
             this.btnBroadcast.Text = "广播";
             this.btnBroadcast.UseVisualStyleBackColor = true;
+            this.btnBroadcast.Click += new System.EventHandler(this.btnBroadcast_Click);
             // 
             // btnStartStop
             // 
@@ -118,13 +119,13 @@
             this.lblStartServer.TabIndex = 0;
             this.lblStartServer.Text = "操作:";
             // 
-            // MainForm
+            // TCPServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 412);
             this.Controls.Add(this.groupBoxServer);
-            this.Name = "MainForm";
+            this.Name = "TCPServer";
             this.Text = "SocketServer";
             this.groupBoxServer.ResumeLayout(false);
             this.groupBoxServer.PerformLayout();

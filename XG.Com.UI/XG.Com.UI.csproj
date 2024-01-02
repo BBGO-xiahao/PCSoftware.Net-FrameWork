@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalKeyHook.cs" />
     <Compile Include="HeadTitle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -51,6 +52,11 @@
       <DependentUpon>HeadTitle.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIControl\CircleProgramBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIManager.cs" />
+    <Compile Include="UITest.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HeadTitle.resx">

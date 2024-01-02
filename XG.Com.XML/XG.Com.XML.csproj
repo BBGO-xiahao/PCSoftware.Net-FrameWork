@@ -45,6 +45,7 @@
     <Compile Include="InitXML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XMLOperation.cs" />
+    <Compile Include="XMLOperationExtend.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

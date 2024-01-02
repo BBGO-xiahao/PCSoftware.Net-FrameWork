@@ -64,6 +64,16 @@
     <Compile Include="DataBase\User.cs" />
     <Compile Include="DataBase\UserBLL.cs" />
     <Compile Include="DataBase\UserDAL.cs" />
+    <Compile Include="SerialPort\DemoDataModel.cs" />
+    <Compile Include="SerialPort\DemoHexProtocol.cs" />
+    <Compile Include="SerialPort\DemoTextProtocol.cs" />
+    <Compile Include="SerialPort\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialPort\FormMain.designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerialPort\MyProtocols.cs" />
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +89,9 @@
     <EmbeddedResource Include="DataBase\DataBaseOpearation.resx">
       <DependentUpon>DataBaseOpearation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SerialPort\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +102,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\XG.Com.Comm\XG.Com.Comm.csproj">
+      <Project>{5130ba95-f0fd-4e9f-8705-62adea3df246}</Project>
+      <Name>XG.Com.Comm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\XG.Com.Core\XG.Com.Core.csproj">
       <Project>{6e9ec6d4-2c4f-4cdd-a813-3dd349668006}</Project>
       <Name>XG.Com.Core</Name>
@@ -105,10 +122,15 @@
       <Project>{877d0ceb-1009-4eb5-aa01-a1fe50172945}</Project>
       <Name>XG.Com.Test</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\XG.Com.UI\XG.Com.UI.csproj">
+      <Project>{ACDB8165-5203-403E-9455-E93D2CDFA7B3}</Project>
+      <Name>XG.Com.UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\XG.Com.XML\XG.Com.XML.csproj">
       <Project>{64c879c4-6941-4700-9706-2c07c82c4bf1}</Project>
       <Name>XG.Com.XML</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

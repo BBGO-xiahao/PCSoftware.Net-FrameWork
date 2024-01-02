@@ -42,18 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\DisposableObject.cs" />
-    <Compile Include="Common\FilePool.cs" />
-    <Compile Include="Common\FileStorage.cs" />
-    <Compile Include="Common\FileStorageReader.cs" />
-    <Compile Include="Common\FileStorageStream.cs" />
-    <Compile Include="Common\FileStorageWriter.cs" />
-    <Compile Include="Common\IWrite.cs" />
-    <Compile Include="Common\Locker.cs" />
-    <Compile Include="Common\SystemExtensions.cs" />
-    <Compile Include="Logger\LogUtil.cs" />
-    <Compile Include="Logger\ILog.cs" />
-    <Compile Include="Logger\LogType.cs" />
+    <Compile Include="Common\BaseLogHelper.cs" />
+    <Compile Include="Common\ILoggerConfig.cs" />
+    <Compile Include="Common\LogInfo.cs" />
+    <Compile Include="Logger\FileLog.cs" />
+    <Compile Include="Logger\FileLogConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -43,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRCCheck\CRCCheck.cs" />
+    <Compile Include="DataConvert\DataConvert.cs" />
+    <Compile Include="FileOperation\FileSave.cs" />
+    <Compile Include="FileOperation\FileTeat.cs" />
+    <Compile Include="FileOperation\IniFileOperation.cs" />
+    <Compile Include="FileParse\BinFileParse.cs" />
+    <Compile Include="FileParse\HexFileParse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UIReflection.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">

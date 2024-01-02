@@ -27,6 +27,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TestProject
 {
@@ -302,7 +303,7 @@ namespace TestProject
          */
         public void databing()
         {
-            TextBox tbAge = new TextBox();
+            System.Windows.Forms.TextBox tbAge = new System.Windows.Forms.TextBox();
             //tbAge.DataBindings.Add(nameof(tbAge.Text), _people, nameof(_people.Age), true, DataSourceUpdateMode.OnPropertyChanged, "0", "X4");
         }
 
@@ -390,7 +391,7 @@ namespace TestProject
             }
         }
 
-        ComboBox comboBox1 = new ComboBox();
+        System.Windows.Forms.ComboBox comboBox1 = new System.Windows.Forms.ComboBox();
         private void InitialComboboxByObject()
         {
 
@@ -953,7 +954,7 @@ namespace TestProject
 
         public void delMethodUtil()
         {
-            DelMethod delMethod=new  DelMethod(delMethodM);
+            DelMethod delMethod = new DelMethod(delMethodM);
         }
 
 
@@ -1189,6 +1190,42 @@ namespace TestProject
              */
         }
 
+
+        #endregion
+
+
+        #region 技术服务
+
+        #region 组合键使用
+
+        //窗体属性设置=>   keyPreview=true
+        //protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        //{
+        //    if (keyData == (Keys.Control | Keys.H | Keys.M))
+        //    {
+        //        // 执行保存操作
+        //        return true; // 返回true表示已经处理了按键事件
+        //    }
+        //    return base.ProcessCmdKey(ref msg, keyData);
+        //}
+        #endregion
+
+        #endregion
+
+
+        #region 计算机知识
+        //Windows API三大模块KERNEL32.DLL、USER32.DLL和GDI32.DLL
+        //user32.dll
+        //是Windows用户界面相关应用程序接口，用于包括Windows处理，基本用户界面等特性，如创建窗口和发送消息
+
+        //gdi32.dll
+        //gdi32.dll是Windows GDI图形用户界面相关程序，包含的函数用来绘制图像和显示文字
+
+        //kernel32.dll
+        //控制着系统的内存管理、数据的输入输出操作和中断处理
+
+        //微软就是靠这三个模块起家的
+        //Windows SDK只利用这三个模块就能构建基本的Windows程序。
 
         #endregion
     }
