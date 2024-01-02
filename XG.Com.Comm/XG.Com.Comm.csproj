@@ -61,16 +61,6 @@
     <Compile Include="SerialPort\TextProtocolAnalyzer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XG.Com.Core\XG.Com.Core.csproj">
-      <Project>{6e9ec6d4-2c4f-4cdd-a813-3dd349668006}</Project>
-      <Name>XG.Com.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XG.Com.LogHelper\XG.Com.LogHelper.csproj">
-      <Project>{de20a47a-e8ca-4105-939d-10c6b3f4cf24}</Project>
-      <Name>XG.Com.LogHelper</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.3</Version>
     </PackageReference>
