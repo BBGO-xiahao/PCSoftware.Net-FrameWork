@@ -98,7 +98,10 @@
             this.btnBroadcast.TabIndex = 2;
             this.btnBroadcast.Text = "广播";
             this.btnBroadcast.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnBroadcast.Click += new System.EventHandler(this.btnBroadcast_Click);
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
             // 
             // btnStartStop
             // 
@@ -119,13 +122,21 @@
             this.lblStartServer.TabIndex = 0;
             this.lblStartServer.Text = "操作:";
             // 
+<<<<<<< HEAD
             // TCPServer
+=======
+            // MainForm
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 412);
             this.Controls.Add(this.groupBoxServer);
+<<<<<<< HEAD
             this.Name = "TCPServer";
+=======
+            this.Name = "MainForm";
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
             this.Text = "SocketServer";
             this.groupBoxServer.ResumeLayout(false);
             this.groupBoxServer.PerformLayout();

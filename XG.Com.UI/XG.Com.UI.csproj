@@ -12,7 +12,10 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+<<<<<<< HEAD
     <TargetFrameworkProfile />
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="GlobalKeyHook.cs" />
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
     <Compile Include="HeadTitle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -52,11 +58,14 @@
       <DependentUpon>HeadTitle.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="UIControl\CircleProgramBar.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UIManager.cs" />
     <Compile Include="UITest.cs" />
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HeadTitle.resx">

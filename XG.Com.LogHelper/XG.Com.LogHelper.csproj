@@ -42,11 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Common\BaseLogHelper.cs" />
     <Compile Include="Common\ILoggerConfig.cs" />
     <Compile Include="Common\LogInfo.cs" />
     <Compile Include="Logger\FileLog.cs" />
     <Compile Include="Logger\FileLogConfig.cs" />
+=======
+    <Compile Include="Logger\LogUtil.cs" />
+    <Compile Include="Logger\ILog.cs" />
+    <Compile Include="Logger\LogType.cs" />
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -27,7 +27,10 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Linq;
+<<<<<<< HEAD
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
 
 namespace TestProject
 {
@@ -303,7 +306,11 @@ namespace TestProject
          */
         public void databing()
         {
+<<<<<<< HEAD
             System.Windows.Forms.TextBox tbAge = new System.Windows.Forms.TextBox();
+=======
+            TextBox tbAge = new TextBox();
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
             //tbAge.DataBindings.Add(nameof(tbAge.Text), _people, nameof(_people.Age), true, DataSourceUpdateMode.OnPropertyChanged, "0", "X4");
         }
 
@@ -391,7 +398,11 @@ namespace TestProject
             }
         }
 
+<<<<<<< HEAD
         System.Windows.Forms.ComboBox comboBox1 = new System.Windows.Forms.ComboBox();
+=======
+        ComboBox comboBox1 = new ComboBox();
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
         private void InitialComboboxByObject()
         {
 
@@ -954,7 +965,11 @@ namespace TestProject
 
         public void delMethodUtil()
         {
+<<<<<<< HEAD
             DelMethod delMethod = new DelMethod(delMethodM);
+=======
+            DelMethod delMethod=new  DelMethod(delMethodM);
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
         }
 
 
@@ -1192,6 +1207,7 @@ namespace TestProject
 
 
         #endregion
+<<<<<<< HEAD
 
 
         #region 技术服务
@@ -1228,6 +1244,8 @@ namespace TestProject
         //Windows SDK只利用这三个模块就能构建基本的Windows程序。
 
         #endregion
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
     }
 
 

@@ -4,7 +4,10 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using System.Windows.Forms;
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
 
 namespace XG.Com.Reflection
 {
@@ -30,6 +33,7 @@ namespace XG.Com.Reflection
             }
             return instance;
         }
+<<<<<<< HEAD
         public ContainerControl ReflectionUI(string dllPath, string objectName, Type type)
         {
             Assembly assembly = Assembly.LoadFrom(dllPath);
@@ -50,5 +54,10 @@ namespace XG.Com.Reflection
         #endregion
 
 
+=======
+        #endregion
+
+       
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
     }
 }

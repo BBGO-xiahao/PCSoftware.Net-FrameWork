@@ -12,7 +12,10 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+<<<<<<< HEAD
     <TargetFrameworkProfile />
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,7 +48,10 @@
     <Compile Include="InitXML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XMLOperation.cs" />
+<<<<<<< HEAD
     <Compile Include="XMLOperationExtend.cs" />
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

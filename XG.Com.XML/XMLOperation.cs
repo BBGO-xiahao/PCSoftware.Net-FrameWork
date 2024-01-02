@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+<<<<<<< HEAD
 using System.Runtime.CompilerServices;
+=======
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace XG.Com.XML
 {
+<<<<<<< HEAD
     public class XMLOperation
     {
         #region 标准单例
@@ -41,10 +45,15 @@ namespace XG.Com.XML
         //对象的属性和字段可以使用特性（如[XmlIgnore]）来指定在序列化时忽略某些成员。
         //对象可以实现接口（如IXmlSerializable）来自定义序列化和反序列化的过程。
 
+=======
+    public   class XMLOperation
+    {
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
         private string file_name = "./Config/";
 
         public object xMLOperation = null;
 
+<<<<<<< HEAD
         /// <summary>
         /// 文件化XML序列化
         /// </summary>
@@ -68,6 +77,9 @@ namespace XG.Com.XML
                 if (fs != null) fs.Close();
             }
         }
+=======
+
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
 
         /// <summary>
         /// 文件化XML序列化
@@ -115,6 +127,7 @@ namespace XG.Com.XML
                 if (fs != null) fs.Close();
             }
         }
+<<<<<<< HEAD
         public object XmlLoad()
         {
             FileStream fs = null;
@@ -156,6 +169,9 @@ namespace XG.Com.XML
                 if (fs != null) fs.Close();
             }
         }
+=======
+
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
         /// <summary>
         /// 文件化XML反序列化
         /// </summary>
@@ -207,7 +223,11 @@ namespace XG.Com.XML
         /// xml初始化
         /// </summary>
         /// <param name="type"></param>
+<<<<<<< HEAD
         public object XmlInit(object objectClass)
+=======
+        public object  XmlInit(object objectClass)
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
         {
             try
             {
@@ -230,7 +250,11 @@ namespace XG.Com.XML
             }
         }
 
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> 47918044a81170e4fe7c9b34c2884e25f3dfd583
 
     }
 }
